@@ -11,10 +11,16 @@ const FEEDS = {
   fun: "https://www.boredpanda.com/feed/",
   health: "https://www.healthline.com/rss",
   hobbies: "https://lifehacker.com/rss",
-  relationships: "https://www.psychologytoday.com/us/blog/relationships/feed"
+  relationships: "https://www.psychologytoday.com/us/blog/relationships/feed",
+  // Added BuzzFeed categories
+  buzzfeed_omg: "https://www.buzzfeed.com/in/omg.xml",
+  buzzfeed_news: "https://www.buzzfeed.com/in/news.xml",
+  buzzfeed_quizzes: "https://www.buzzfeed.com/in/quizzes.xml",
+  buzzfeed_tasty: "https://www.buzzfeed.com/in/tasty.xml",
+  buzzfeed_entertainment: "https://www.buzzfeed.com/in/entertainment.xml"
 };
 
-// Optional: endpoint per category
+// Endpoint per category
 app.get("/feed/:category", async (req, res) => {
   const category = req.params.category;
   const feedUrl = FEEDS[category];
@@ -35,7 +41,7 @@ app.get("/feed/:category", async (req, res) => {
   }
 });
 
-// Optional: combined feed endpoint
+// Combined feed endpoint
 app.get("/feed", async (req, res) => {
   try {
     const results = [];
