@@ -33,7 +33,8 @@ app.get("/feed/:category", async (req, res) => {
       title: item.title,
       link: item.link,
       pubDate: item.pubDate,
-      snippet: item.contentSnippet
+      snippet: item.contentSnippet,
+      description: item.description
     }));
     res.json(items);
   } catch (err) {
@@ -51,7 +52,8 @@ app.get("/feed", async (req, res) => {
         title: item.title,
         link: item.link,
         pubDate: item.pubDate,
-        snippet: item.contentSnippet
+        snippet: item.contentSnippet,
+        description: item.description
       }));
     }
     // Optionally sort by pubDate
