@@ -1,0 +1,17 @@
+{
+  "name": "rss-aggregator",
+  "version": "1.0.0",
+  "description": "RSS feed aggregator for text-reels",
+  "main": "rss-server.js",
+  "scripts": {
+    "start": "node rss-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "rss-parser": "^3.12.0"
+  },
+  "engines": {
+    "node": "18.x"
+  }
+}
