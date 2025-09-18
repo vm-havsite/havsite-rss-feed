@@ -2,7 +2,7 @@
   "name": "rss-aggregator",
   "version": "1.0.0",
   "description": "RSS feed aggregator for text-reels",
-  "main": "rss-server.js",
+  "main": "parser.js",
   "scripts": {
     "start": "node parser.js"
   },
