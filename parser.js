@@ -29,6 +29,8 @@ app.get("/feed", async (req, res) => {
   }
 });
 
-app.listen(3000, () => {
-  console.log("RSS feed server running at http://localhost:3000/feed");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`RSS feed server running on port ${PORT}`);
 });
+
