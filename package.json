@@ -4,7 +4,7 @@
   "description": "RSS feed aggregator for text-reels",
   "main": "rss-server.js",
   "scripts": {
-    "start": "node rss-server.js"
+    "start": "node parser.js"
   },
   "dependencies": {
     "express": "^4.18.2",
