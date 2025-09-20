@@ -9,7 +9,7 @@ const parser = new Parser();
 // Example multiple feeds by category
 const FEEDS = {
   fun: "https://www.boredpanda.com/feed/",
-  health: "https://www.healthline.com/rss",
+  health: "https://rss.nytimes.com/services/xml/rss/nyt/Health.xml",
   hobbies: "https://lifehacker.com/rss",
   relationships: "https://www.psychologytoday.com/us/blog/relationships/feed",
   // Added BuzzFeed categories
